@@ -37,8 +37,14 @@ THE SOFTWARE.
 #ifndef _MPU9250_H_
 #define _MPU9250_H_
 
+#include <stdint.h>
+
 #include "I2Cdev.h"
-#include <avr/pgmspace.h>
+
+
+//
+void delay(int delay); // some glue... what unit is it expecting us? ms? 
+
 
 //Magnetometer Registers
 #define MPU9150_RA_MAG_ADDRESS		0x0C
